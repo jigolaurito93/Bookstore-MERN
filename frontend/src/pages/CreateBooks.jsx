@@ -19,7 +19,7 @@ const CreateBooks = () => {
     };
     setLoading(true);
     axios
-      .post(`https://mernbkstr.netlify.app/books`, data)
+      .post(`http://localhost:5555/books`, data)
       .then(() => {
         setLoading(false);
         navigate("/");
